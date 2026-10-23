@@ -1,9 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
+import PropTypes from 'prop-types';
+
 function Child({ books }) {
-    if (!books || books.length === 0) {
-   return (
+  if (!books || books.length === 0) {
+    return <h2>წიგნები არ მოიძებნა</h2>;
+  }
+
+  return (
     <div className="books-list">
       <h3>წიგნების სია:</h3>
       <ul>
@@ -26,4 +31,4 @@ Child.propTypes = {
   ).isRequired,
 };
 
-export default Child; 
+export default Child;
